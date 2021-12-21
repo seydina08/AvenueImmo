@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:agenceimmo/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -56,11 +55,11 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Container(
         padding: EdgeInsets.zero,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
                 width: MediaQuery.of(context).size.width,
-                height: 200,
+                height: MediaQuery.of(context).size.height*0.31,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(25),
@@ -70,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(top: 20),
+                      padding: EdgeInsets.only(top: 50),
                       child: CircleAvatar(
                         backgroundImage: AssetImage(
                           "images/capturef.PNG",
