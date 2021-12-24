@@ -21,7 +21,10 @@ class _State extends State<LoginPage> {
       title: Text("login"),
     );
     return Scaffold(
-        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        body: SingleChildScrollView(
+          padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.15),
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       Text(
         "Connexion",
         style: TextStyle(
@@ -177,6 +180,6 @@ class _State extends State<LoginPage> {
           ],
         ),
       )
-    ]));
+    ])));
   }
 }
